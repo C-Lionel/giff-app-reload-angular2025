@@ -6,4 +6,6 @@ import { GifListItemComponent } from "./gif-list-item/gif-list-item.component";
   imports: [GifListItemComponent],
   templateUrl: './gif-list.component.html'
 })
-export class GifListComponent { }
+export class GifListComponent {
+    // input string[];
+ }
