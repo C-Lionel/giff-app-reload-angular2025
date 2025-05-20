@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { GifListItemComponent } from "./gif-list-item/gif-list-item.component";
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'gif-list',
-  imports: [GifListItemComponent],
+  imports: [GifListItemComponent, NgFor],
   templateUrl: './gif-list.component.html'
 })
 export class GifListComponent {
-    // input string[];
+      gifs = input.required<string[]>()
  }
